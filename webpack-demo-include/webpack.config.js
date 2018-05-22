@@ -36,28 +36,7 @@ module.exports = {
 
 			{
 				test : /\.css$/,
-				use : [
-						'style-loader',
-						{
-							loader : 'css-loader',
-							options : {
-								module : true
-							}
-						}
-				],
-				exclude : [
-					path.resolve(__dirname, 'node_modules'),
-					path.resolve(__dirname, 'src/common')
-				]
-			},
-
-			{
-				test : /\.css$/,
-				use : ['style-loader','css-loader'],
-				include : [
-					path.resolve(__dirname, 'node_modules'),
-					path.resolve(__dirname, 'src/common')
-				]
+				use : ['style-loader','css-loader']
 			},
 
 			{
@@ -81,7 +60,7 @@ module.exports = {
 	},
 
 	devServer : {
-		port : 8880,
+		port : 9000,
 		open : true
 	}
 	

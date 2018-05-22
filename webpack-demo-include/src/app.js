@@ -9,17 +9,13 @@ const giphy = require("./common/img/giphy.gif");
 
 import 'font-awesome/css/font-awesome.css';
 
-import style from './app.css';
-
 ReactDOM.render(
 	<div>
 		
 		<img src={dog} alt="" />
 		<img src={kb} alt="" />
 		<img src={giphy} alt="" />
-		<div className="fa fa-rocket">
-			<span className={style.ot}>React</span>
-		</div>
+		<div className="fa fa-rocket">React</div>
 	</div>,
 	document.getElementById('root')
 )
